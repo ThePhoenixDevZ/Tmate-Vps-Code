@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND=noninteractive
  
 # Install tmate, tmux, Python for HTTP server, etc.
 RUN apt-get update && \
-    apt-get install -y tmate tmux curl openssh-client python3 tzdata neofetch && \
+    apt-get install -y tmate tmux curl openssh-client python3 tzdata && \
     ln -fs /usr/share/zoneinfo/Asia/Kathmandu /etc/localtime && \
     dpkg-reconfigure -f noninteractive tzdata
  
